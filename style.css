@@ -1,0 +1,111 @@
+:root {
+  --planet-width: "1280px";
+  --planet-height: "720px";
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  margin: 0;
+  min-height: 100vh;
+  color: #fff;
+}
+
+#marsloc {
+  cursor: grab;
+}
+
+#scene-holder {
+  position: relative;
+  width: 1024px;
+  height: 720px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#marsloc canvas {
+  position: absolute;
+  width: 1280px !important;
+  height: 900px !important;
+  z-index: 10;
+  top: 193px;
+  left: -38px;
+}
+
+#bedroom {
+  position: absolute;
+  display: block;
+  width: 1024px !important;
+  height: 720px !important;
+  z-index: 12;
+}
+
+#marsinfo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+}
+
+#marsinfo h1 {
+  font-size: 8vw;
+  margin-top: 0;
+  font-weight: 100;
+  line-height: 1;
+  position: absolute;
+}
+
+#marsinfo {
+  display: none;
+}
+
+#marsinfo div {
+  width: 40%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  right: 0;
+  padding: 1.3rem;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+@media all and (max-width: 540px) {
+  #marsinfo div {
+    width: 100%;
+    left: 0;
+    top: 40vw;
+  }
+}
+
+.sounds-holder {
+  margin-top: 40px;
+  text-align: center;
+}
+.btn {
+  box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+  background-color:#768d87;
+  border-radius:5px;
+  border:1px solid #566963;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:11px 23px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2b665e;
+}
+.btn:hover {
+  background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color:#6c7c7c;
+}
+.btn:active {
+  position:relative;
+  top:1px;
+}
